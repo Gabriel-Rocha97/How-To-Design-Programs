@@ -8,7 +8,5 @@
 
 (if (>= HEIGHT WIDTH) "tall" "wide")
 
-(cond
-  [(> HEIGHT WIDTH) "tail"]
-  [(< HEIGHT WIDTH) "wide"]
-  [else "square"])
+(if (> HEIGHT WIDTH) "tail"
+    (if (< HEIGHT WIDTH) "wide" "square"))
