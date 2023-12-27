@@ -5,4 +5,4 @@
 (define (string-first str)
   (cond
     [(= (string-length str) 0) ""]
-    [else (substring str 1)]))
+    [else (substring str 0 1)]))
